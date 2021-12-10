@@ -51,4 +51,4 @@ def text_handler(message: telebot.types.Message):
 
 bot.remove_webhook()
 time.sleep(0.1)
-bot.set_webhook(app.config["SERVER_NAME"] + f"/{app.config['TELEGRAM_BOT_TOKEN']}")
+bot.set_webhook("https://" + app.config["SERVER_NAME"] + f"/{app.config['TELEGRAM_BOT_TOKEN']}")
